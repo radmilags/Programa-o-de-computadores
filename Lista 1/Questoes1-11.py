@@ -48,3 +48,15 @@ z = len(x)
 print(x[z-1])
 
 print("10. Considere uma variável seg, que armazena um tempo t em segundos. Escreva uma sequencia de instruções no interpretador Python3 que crie 3 variáveis, h, m e s, que contenham, respectivamente o tempo passado convertido em horas (h), minutos (m) e segundos (s).")
+seg = 360
+m = seg // 60 #segundo para minuto
+h = seg // 360 #segundo para hora
+print(seg, m , h)
+
+print("11. Considere uma variável x com um valor inteiro desconhecido de 4 dígitos (exemplos: 1234 ou 1029 ou 3893). Usando apenas a variável x e expressões matemáticas crie uma variável chamada x_invertido que contenha o conteúdo de x com os valores invertido Exemplos:")
+x = str(input())
+i = 3
+print (x, "| ", end="")
+while i >= 0:
+    print(x[i], end="")
+    i -= 1
