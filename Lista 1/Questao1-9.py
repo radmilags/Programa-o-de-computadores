@@ -41,3 +41,9 @@ x=x+0.1
 print(x)
 print("Verifique o valor de x mostrado com o comando print(x). Você consegue explicar o resultado?")
 print("O resutado apresentado é 0.9999999999999999, pois, apesar de x começar com o valor 0.1, ao longo da expressão, seu valor anterior é somado com 0.1, gerando um novo valor")
+
+print("9. Digite as expressões a seguir e observe o resultado.")
+print("49*1/49=", 49*1/49)
+print("1/49*49=", 1/49*49)
+print("Os resultados são os mesmos? devem ser os mesmos? Por que?")
+print("Os resutados não são os mesmos, pois de acordo com a matemática básica, primeiro se realiza a divisão e multiplicação, e só depois adição e subtração")
