@@ -1,22 +1,27 @@
 # 1. Escreva um programa que escreva na tela a seguinte mensagem:
 print("Meu primeiro programa!")
+
 # 2. Escreva um programa que escreva na tela o endereço do IFRN da seguinte forma:
 print("Avenida Senador Salgado Filho, 1559,")
 print("Tirol, Natal-RN, Brasil")
 print("CEP: 59015-000")
 print("e-mail: ccs.cnat@ifrn.edu.br")
 print("Telefone: 4005-2600")
+
 # 3. Escreva um programa que leia seu nome e mostre a seguinte mensagem:
 s = input()
 print("Oi", s, "bom dia!")
+
 # 4. Escreva um programa que leia dois números inteiros e mostre a soma dos mesmos.
 x = int(input())
 y = int(input())
 print(x+y)
+
 # 5. Escreva um programa que leia dois números reais e mostre a média aritmética dos mesmos.
 f1 = float(input())
 f2 = float(input())
 print((f1+f2)/2)
+
 # 6. Escreva um programa que leia duas notas e mostre a média obtida a partir das mesmas, de acordo com as regras do IFRN.
 x = int(input()) 
 while x < 0 or x > 100:
