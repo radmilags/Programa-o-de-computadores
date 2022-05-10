@@ -42,7 +42,6 @@ print(x*y*z)
 # A hora de início e fim é dada em minutos desde o início do dia.
 x = int(input())
 y = int(input())
-
 z = y - x
 h1 = z // 60
 m1 = z % 60
