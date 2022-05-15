@@ -86,17 +86,14 @@ print(h , ":", min)
 # entre cada par de postes é o valor, em metros, lido pelo programa, com exceção
 # da distância entre os dois últimos postes da rua.
 # Exemplo de entrada e saída para a execução do programa:
-comprimento = int(input("digite o comprimento total da rua em Km: ")) #1000
-distancia = int(input("digite de quantos em quantos metros deseja um poste: "))
-poste = comprimento // distancia
-infi1 = (poste distancia) - distancia
-while infi1 == 0:
-    distancia = int(input("distância inválida, tente novamente: "))
-    poste = (comprimento // distancia)
-    infi = (poste * distancia) - distancia
-    if infi != 0:
-        print(f"a quantidade de postes vai ser de {poste + 2}. A distância entre o primeiro e último poste é {infi}m")
-        break
-if infi1 != 0:
-    print(f"a quantidade de postes vai ser de {poste + 2} e a distância entre o primeiro e último poste é de {infi1}m")
-# esse último é o que eu falei da distância inválida
+from math import ceil
+comprimento = float(input("digite o comprimento da rua em km: ")) * 1000
+
+distancia = float(input("digite a distância entre os postes(em m): "))
+
+quantidade = (comprimento / distancia) + 1
+quant = ceil(quantidade)
+ultimo = comprimento % distancia
+
+print(f"a quantidade de postes vai ser de {quant}")
+print(f"e a distância entre os dois ultimos vai ser de {ultimo} ")
