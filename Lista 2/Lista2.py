@@ -69,3 +69,34 @@ print("Troco :", z - v)
 # 11. Escreva um programa que leia a distância entre duas cidades A e B, em kilômetros, 
 # a velocidade, em km/h, do carro e mostre qual o tempo da viagem entre
 # A e B, no formato HH:MM. Os segundos devem ser desprezados.
+
+distancia = int(input())
+vel = int(input())
+h = distancia // vel
+min = ((distancia / vel)- h)*60
+min = round(min)
+print(h , ":", min)
+
+
+# 12. Escreva um programa que calcule a quantidade de postes a serem colocados
+# em uma rua. O programa deve ler a distância do início ao fim da rua, em
+# quilômetros e a distância entre dois (2) postes, em metros. Seu programa
+# deve mostrar a quantidade de postes e a distância entre os dois últimos postes.
+# Lembre-se que há sempre um poste no início da rua e outro no final. A distância
+# entre cada par de postes é o valor, em metros, lido pelo programa, com exceção
+# da distância entre os dois últimos postes da rua.
+# Exemplo de entrada e saída para a execução do programa:
+comprimento = int(input("digite o comprimento total da rua em Km: ")) #1000
+distancia = int(input("digite de quantos em quantos metros deseja um poste: "))
+poste = comprimento // distancia
+infi1 = (poste distancia) - distancia
+while infi1 == 0:
+    distancia = int(input("distância inválida, tente novamente: "))
+    poste = (comprimento // distancia)
+    infi = (poste * distancia) - distancia
+    if infi != 0:
+        print(f"a quantidade de postes vai ser de {poste + 2}. A distância entre o primeiro e último poste é {infi}m")
+        break
+if infi1 != 0:
+    print(f"a quantidade de postes vai ser de {poste + 2} e a distância entre o primeiro e último poste é de {infi1}m")
+# esse último é o que eu falei da distância inválida
