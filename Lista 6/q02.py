@@ -10,6 +10,13 @@ def f2(a,b,c):
     return x+y
 x,y,z = map(int,input().split())
 print(f2(x,y,z))
+
+a = f1(y,z) #x=15 x=10
+print(a)
+b = a+f1(z,x) #y=10 y=20
+print(b)
+print(a+b)
+
 #Escreva a saída do programa para os valores de entrada:
 #• 10, 20 e 15 - 25
 #• 20, 10 e 30 - 30
