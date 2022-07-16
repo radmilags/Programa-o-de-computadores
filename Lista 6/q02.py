@@ -5,18 +5,13 @@ def f1(a,b): #retorna o menor
     else:
         return a
 def f2(a,b,c):
-    x = f1(b,c) #x=15 x=10
-    y = x+f1(c,a) #y=10 y=20
+    x = f1(b,c) #x=15 x=10 x=1
+    y = x+f1(c,a) #y=25 y=30 y=3
     return x+y
 x,y,z = map(int,input().split())
 print(f2(x,y,z))
 
-a = f1(y,z) #x=15 x=10
-print(a)
-b = a+f1(z,x) #y=10 y=20
-print(b)
-print(a+b)
-
 #Escreva a saída do programa para os valores de entrada:
-#• 10, 20 e 15 - 25
-#• 20, 10 e 30 - 30
+#• 10, 20 e 15 - 40
+#• 20, 10 e 30 - 40
+#• 3, 1 e 2 - 4
