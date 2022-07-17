@@ -18,16 +18,16 @@ Exemplo de entrada e saída para a execução do programa:'''
 def mul(a, e):
     if e == 0: return 1
     if e == 1: return a
-    return a*(a**mul(a, e-1))
+    return #corrigir
 
 a, e = map(int,input().split())
 print(mul(a, e))
 
 '''
 a**5 = a*a**4
-a**4 = a**3
-a**3 = a**2
-a**2 = a**1
-a**1 = a**0
+a**4 = a*a**3
+a**3 = a*a**2
+a**2 = a*a**1
+a**1 = a*a**0
 a**0 = 1
 '''
