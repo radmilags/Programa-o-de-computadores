@@ -8,19 +8,15 @@ def conta_digitos(n,d): #numero que eu vou receber
     for i in range(len(n)):
         if n[i] == d: count += 1
     return print(count)
+
 n = input()
 d = input()
-count = 0 
 conta_digitos(n, d)
-
-def contador(n):
-    i = 0
-    count = 0 
-    while i < 9:
-        for j in range(len(n)):
-            if n[j] == d: count += 1
-            return print(i, ":", count)
-        count = 0
-
-n = input()
-
+i = 0
+count = 0 
+while i < 9:
+    for j in range(len(n)):
+        if n[j] == str(i): count += 1
+    print(i, ":", count)
+    count = 0
+    i+=1
