@@ -17,10 +17,10 @@ def contador(n):
     i = 0
     count = 0 
     while i < 9:
-        for i in range(len(n)):
-            if n[i] == d: count += 1
-            print("0: 0")
-    return 0
+        for j in range(len(n)):
+            if n[j] == d: count += 1
+            return print(i, ":", count)
+        count = 0
 
 n = input()
 
